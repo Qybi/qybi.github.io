@@ -2,12 +2,12 @@
   "pageLayout": "two-column",
   "basics": {
     "name": "Raffaele Trivillin",
-    "label": "Full Stack Developer",
+    "label": "IIoT Full Stack Developer",
     "image": "/avatar.jpg",
     "email": "qybi.dev@gmail.com",
     "url": "https://www.qybi.dev",
     "dob": "26/01/1998",
-    "summary": "Full-stack software developer with 5~6 years of experience, currently completing a `Cloud Developer` specialization through ITS Academy Alto Adriatico. I’ve built multiple web applications across different domains and tech stacks. I’m eager to contribute to and learn from a company working either on large-scale or medium-scale applications. I define myself as a calm, curious and, to a certain degree, eclectic person, committed to always deliver the best quality results, whether independently or in a team.",
+    "summary": "Full-stack developer with 7 years of experience designing and developing cloud and on-premises applications, now specializing in industrial digitalization and MES/MOM systems on the .NET stack. I follow the product from requirements gathered on the shop floor through to release and support: architectural decisions, integration with automation systems (OPC UA, Siemens PLCs), team coordination, and dialogue with management and customers.",
     "hobbies": [
       {
         "name": "Reading books and comics",
@@ -69,8 +69,9 @@
       "url": "https://www.itsaltoadriatico.it/",
       "area": "Cloud Developer ITS Diploma - EQF 6",
       "studyType": "Full-time student and contracted developer",
-      "startDate": "2023-10-15",
-      "endDate": "2025-07-30"
+      "startDate": "2023-11-01",
+      "endDate": "2025-07-30",
+      "score": "Graduated with 100/100 with honors"
     },
     {
       "institution": "ISIS A. Malignani",
@@ -91,13 +92,76 @@
   ],
   "work": [
     {
+      "name": "Imel S.p.A.",
+      "position": "Lead Developer",
+      "location": "Codroipo (UD), IT",
+      "url": "",
+      "startDate": "2025-10-01",
+      "endDate": null,
+      "summary": "Responsible for end-to-end development of MES/MOM platforms for Industry 4.0, designed for painting plants and machines: from gathering requirements on site through implementation, delivery, support and customer training.",
+      "highlights": [],
+      "responsibilities": [
+        "Led a team of 4 people, including 2 external consultants and 1 intern, introducing an Agile method with weekly sprints, daily standups and mentoring",
+        "Presented research plans and new features arising from customer needs to the General Manager and the Head of Automation; wrote technical specifications, implementation plans and time estimates",
+        "Proposed hybrid sales models for software activities",
+        "Integration with automation systems via OPC UA with Siemens S7-1500/S7-1200 PLCs",
+        "Regular use of AI in development: single agents, multi-agent setups and parallel feature development with my own harness framework"
+      ],
+      "achievements": [
+        {
+          "title": "Within 4 months took full control of both main MES/MOM codebases, turning them from half-finished builds into multi-platform products customizable to customer requirements",
+          "subAchievements": []
+        },
+        {
+          "title": "Standardized and refactored the code to reduce technical debt and shorten the time needed to integrate new features",
+          "subAchievements": [
+            "Wrote test suites for the most critical areas"
+          ]
+        },
+        {
+          "title": "Refactored the architecture and added caching to drastically cut response times on the most requested data",
+          "subAchievements": [
+            "Downloading the part's process information sheet went from 8 seconds to under 0.1 seconds"
+          ]
+        },
+        {
+          "title": "Taught a course on using AI to colleagues outside the software field",
+          "subAchievements": []
+        }
+      ],
+      "skills": {
+        "C#": "devicon:csharp",
+        ".NET 9/10": "devicon:dot-net",
+        "Blazor": "devicon:blazor",
+        "Radzen UI": "",
+        "TypeScript": "devicon:typescript",
+        "DDD": "",
+        "CQRS": "",
+        "MediatR": "",
+        "MassTransit": "",
+        "Wolverine": "",
+        "RabbitMQ": "devicon:rabbitmq",
+        "Hangfire": "",
+        "OPC UA": "",
+        "Siemens PLC": "",
+        "Entity Framework": "",
+        "SQL Server": "devicon:microsoftsqlserver",
+        "InfluxDB": "devicon:influxdb",
+        "MinIO": "",
+        "Seq": "",
+        "Testcontainers": "",
+        "Docker": "devicon:docker",
+        "Python": "devicon:python"
+      }
+    },
+    {
       "name": "Archeido S.r.l.",
       "position": "Full-stack Developer",
       "location_type": "Hybrid",
       "location": "Udine, IT",
       "url": "https://archeido.com/",
       "startDate": "2024-06-10",
-      "endDate": null,
+      "endDate": "2025-06-30",
       "summary": "Developed features, tested, refactored and debugged production on full stack custom web applications and services for the industrial and hospitality domains.",
       "highlights": [
         "Developed and maintained backend services using Ruby on Rails and NodeJS;",
@@ -158,7 +222,7 @@
       "location": "Latisana, IT",
       "url": "",
       "startDate": "2019-02-04",
-      "endDate": "2023-10-31",
+      "endDate": "2023-07-31",
       "summary": "Designed, Developed and deployed full stack SaaS B2B web applications and windows desktop applications mainly for the HoReCa domain",
       "highlights": [],
       "responsibilities": [
@@ -248,6 +312,24 @@
     }
   ],
   "projects": [
+    {
+      "name": "Evently",
+      "isActive": true,
+      "description": "A modular monolith application built for reference: my own take on Milan Jovanović's Modular Monolith course, upgraded to .NET 10 and reworked in structure, data access and infrastructure.",
+      "highlights": [
+        "⚡ Built with .NET 10, modular monolith with CQRS (MediatR) and DDD",
+        "🔧 EF Core, PostgreSQL, Redis, RabbitMQ, Quartz with outbox/inbox pattern",
+        "🔐 Keycloak auth, YARP gateway, Seq and Jaeger observability",
+        "🧪 Architecture and integration tests with Testcontainers, Docker Compose setup"
+      ],
+      "image": {
+        "url": "",
+        "position": "container",
+        "dark": ""
+      },
+      "url": "https://github.com/Qybi/Evently",
+      "github": "https://github.com/Qybi/Evently"
+    },
     {
       "name": "MokaMetrics",
       "isActive": true,
