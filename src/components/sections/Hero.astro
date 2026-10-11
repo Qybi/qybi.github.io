@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import ThemeSwitch from "../ThemeSwitch.astro";
 
-const { name, label, image, location, profiles, email, dob } = basics;
+const { name, label, image, location, profiles, dob } = basics;
 const { city, region, address } = location;
 ---
 
@@ -28,23 +28,6 @@ const { city, region, address } = location;
         {dob}
       </div>
       <footer class="print:hidden">
-        {
-          email && (
-            <a
-              href={`mailto:${email}`}
-              title={`Send me an email`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon
-                class="print:hidden"
-                name="mdi:email"
-                width={25}
-                height={25}
-              />
-            </a>
-          )
-        }
         {
           profiles.map(({ network, url, icon }) => {
             return (
